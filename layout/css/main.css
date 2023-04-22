@@ -1,0 +1,76 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Heebo", sans-serif;
+  color: #fff;
+  font-size: 20px;
+}
+.topic {
+  text-transform: uppercase;
+  padding: 0;
+  font-weight: 200;
+  font-size: 40px;
+  color: #fff;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto; /*позиционирование по центру*/
+}
+header {
+  background: url('../img/animals.jpg') no-repeat center top / cover;
+}
+.header a {
+  color: #fff;
+}
+ul, li {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.menu {
+  display: flex;
+  margin-left: 160px;
+}
+.menu li a { 
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+.menu li {
+  margin-right: 40px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+  font-size: 20px;
+}
+.button {
+  background-color: #CB5C72; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 8px;
+  width: 80px;
+  margin-left: 210px;
+  background: rgba(163, 26, 56, 0.411);
+}
+.mn th {
+  letter-spacing: 0.1em;  
+  margin: 0;
+  font-size: 14px;
+}
+.enter {
+  border-radius: 8px;
+  opacity: .7;
+  outline: none;
+  border: none; 
+}
+.parametrs {
+  margin: 0;
+  font-size: 14px;
+}
