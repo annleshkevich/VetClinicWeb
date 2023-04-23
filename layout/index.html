@@ -14,7 +14,6 @@
   <header id="header" class="header">
     <div class="container">
       <div class="nav">
-        <img scr="img/logo.png">
         <h1>
           <strong class="topic">
             VET CLINIC 9 LIVES
@@ -37,41 +36,90 @@
             </a>           
           </li>
         </ul>
+        <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+          log in
+        </button>
+        <div id="id01" class="modal">
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+            </div>
+            <div class="container2">
+              <label for="uname"><b>login</b></label>
+              <input type="text" placeholder="Enter login" name="login" required>
+              <label for="psw"><b>password</b></label>
+              <input type="password" placeholder="Enter password" name="psw" required>
+              <button type="submit">login</button>
+            </div> 
+          </form>
+        </div>
+        <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">
+          sign up
+        </button>
+        <div id="id02" class="modal">
+          <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+              <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">×</span>
+            </div>
+            <div class="container3">
+              <label for="uname"><b>login</b></label>
+              <input type="text" placeholder="Enter login" name="login" required>
+              <label for="uname"><b>email</b></label>
+              <input type="text" placeholder="Enter email" name="email" required>
+              <label for="psw"><b>password</b></label>
+              <input type="password" placeholder="Enter password" name="psw" required>
+              <button type="submit">login</button>
+            </div> 
+          </form>
+        </div>
+      </div>      
+    </div>
+      <div>
+        <table class="appointment" cellspacing="0">
+          <tr class="mn">
+           <th>APPOINTMENT</th>
+          </tr>
+          <tr>
+           <td class="parametrs">FULL NAME</td>
+           <td>
+            <input class="enter" name="full name" type="text" />
+           </td>
+          </tr>
+          <tr>
+            <td class="parametrs">DATE</td>
+            <td>
+              <input class="enterdate" type="datetime-local" атрибуты>
+            </td>
+          </tr>
+           <td class="parametrs">ANIMAL</td>
+           <td>
+            <select class="list" name="animals">
+              <option value="1"></option>
+              <option value="2">Dog</option>
+              <option value="3">Cat</option>
+            </select>
+           </td>
+          </tr>
+          <tr>
+           <td class="parametrs">COMPLAIN</td>
+           <td>
+            <input class="enter" name="complain" type="text" />
+           </td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>
+              <button>enroll</button>
+            </td>
+           </tr>
+         </table>
       </div>
+
       
-      <table cellspacing="0">
-        <tr class="mn">
-         <th>APPOINTMENT</th>
-        </tr>
-        <tr>
-         <td class="parametrs">FULL NAME</td>
-         <td>
-          <input class="enter" name="full name" type="text" />
-         </td>
-        </tr>
-        <tr>
-         <td class="parametrs">ANIMAL</td>
-         <td>
-          <input class="enter" name="full name" type="text" />
-         </td>
-        </tr>
-        <tr>
-         <td class="parametrs">COMPLAIN</td>
-         <td>
-          <input class="enter" name="complain" type="text" />
-         </td>
-        </tr>
-       </table>
-       <button class="button">Enroll</button>
-      
+     
+
     </div>
   </header>
-
-  <section id="about" class="about">
-    <div class="container">
-     
-    </div>
-  </section>
   <footer id="footer" class="footer">
     <div class="container">
 
