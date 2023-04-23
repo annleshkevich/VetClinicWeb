@@ -81,12 +81,12 @@ button {
   outline: none;
 }
 .parametrs {
-  margin: 0;
   font-size: 14px;
 }
-.appointment {
+.table {
   margin-left: 100px;
   padding: 0;
+  margin-top: 20px;
   background: rgba(207, 56, 89, 0.199);  
   border-radius: 8px;
 }
@@ -99,7 +99,8 @@ button {
   height: 25px;
 }
 /* Full-width input fields */
-input[type=text], input[type=password] {
+input[type=text], input[type=password], 
+input[type=number] {
   width: 100%;
   padding: 12px 10px;
   margin: 2px 0;
@@ -152,4 +153,3 @@ input[type=text], input[type=password] {
   color: rgb(170, 155, 168);
   cursor: pointer;
 }
-
