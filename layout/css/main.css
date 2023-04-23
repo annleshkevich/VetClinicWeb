@@ -19,6 +19,11 @@ body {
 header {
   background: url('../img/animals.jpg') no-repeat center top / cover;
 }
+section
+{
+  margin-top: -25px;
+  background: url("../img/dogs.jpg");
+}
 .header a {
   color: #fff;
 }
@@ -71,6 +76,16 @@ button {
   border: none; 
   height: 0px;
 }
+.pp h2 {
+  font-size: 26px;
+  margin-left: 590px;
+  margin-top: -20px;
+}
+.ppp  h2{
+  font-size: 26px;
+  margin-left: 590px;
+  padding-top: 70px;
+}
 .enterdate {
   height: 25px;  
   opacity: .7;
@@ -86,8 +101,15 @@ button {
 .table {
   margin-left: 100px;
   padding: 0;
-  margin-top: 20px;
+  margin-top: 10px;
   background: rgba(207, 56, 89, 0.199);  
+  border-radius: 8px;
+}
+.table2 {
+  margin-left: 100px;
+  padding: 0;
+  margin-top: 10px;
+  background: rgba(80, 154, 204, 0.404);  
   border-radius: 8px;
 }
 .list {
@@ -157,4 +179,16 @@ input[type=number] {
   display: flex;
   align-items: center;
   font-size: 20px;
+}
+.blue {
+  background-color: #aeebeb2c; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 8px;
+  width: 80px;
+  background: rgba(78, 122, 216, 0.61);
 }

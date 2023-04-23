@@ -15,7 +15,7 @@
     <div class="container">
       <div class="nav">
         <h1>
-          <strong class="topic"> VET CLINIC 9 LIVES</strong>
+          <strong class="topic">VET CLINIC 9 LIVES</strong>
         </h1>
         <ul class="menu">
           <li><a href="#">Appointments</a></li>
@@ -23,6 +23,7 @@
           <li><a href="#">Animals</a></li>
         </ul>
         <!-----------------------------USERS----------------------------->
+        <!--log in, sign up-->
         <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
           log in
         </button>
@@ -62,214 +63,256 @@
       </div>      
     </div>
      <!----------------------------APPOINTMENTS-------------------------->
-     <div class="nad">
-        <table class="table" cellspacing="0">
-          <tr class="mn">
-           <th>CREATE APPOINTMENT</th>
-          </tr>
-          <tr>
-           <td class="parametrs">FULL NAME</td>
-           <td>
-            <input class="enter" name="full name" type="text" />
-           </td>
-          </tr>
-          <tr>
-            <td class="parametrs">DATE</td>
+     <div>  
+      <div class="pp"><h2>APPOINTMENTS</h2></div>      
+      <!--create, delete-->
+      <div class="nad">
+         <table class="table" cellspacing="0">
+           <tr class="mn">
+            <th>CREATE APPOINTMENT</th>
+           </tr>
+           <tr>
+            <td class="parametrs">FULL NAME</td>
             <td>
-              <input class="enterdate" type="datetime-local" атрибуты>
-            </td>
-          </tr>
-           <td class="parametrs">ANIMAL</td>
-           <td>
-            <select class="list" name="animals">
-              <option value="1"></option>
-              <option value="2">Dog</option>
-              <option value="3">Cat</option>
-            </select>
-           </td>
-          </tr>
-          <tr>
-           <td class="parametrs">COMPLAIN</td>
-           <td>
-            <input class="enter" name="complain" type="text" />
-           </td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <button>enroll</button>
+             <input class="enter" name="full name" type="text" />
             </td>
            </tr>
-         </table>
+           <tr>
+             <td class="parametrs">DATE</td>
+             <td>
+               <input class="enterdate" type="datetime-local" атрибуты>
+             </td>
+           </tr>
+            <td class="parametrs">ANIMAL</td>
+            <td>
+             <select class="list" name="animals">
+               <option value="1"></option>
+               <option value="2">Dog</option>
+               <option value="3">Cat</option>
+             </select>
+            </td>
+           </tr>
+           <tr>
+            <td class="parametrs">COMPLAIN</td>
+            <td>
+             <input class="enter" name="complain" type="text" />
+            </td>
+           </tr>
+           <tr>
+             <td>&nbsp;</td>
+             <td>
+               <button>enroll</button>
+             </td>
+            </tr>
+          </table>
+          <table class="table" cellspacing="0">
+           <tr class="mn">
+          <th>DELETE APPOINTMENT</th>
+         </tr>
+         <tr>
+          <td class="parametrs">APPOINTMENT</td>
+          <td>
+           <select class="list" name="Appointments">
+             <option value="1"></option>
+             <option value="2">id 1</option>
+             <option value="3">id 2</option>
+           </select>
+          </td>
+         </tr>
+         <tr>
+           <td>&nbsp;</td>
+           <td>
+             <button>delete</button>
+           </td>
+          </tr>
+        </table>
+       </div >
+       <!--update-->
+       <div class="nad">
          <table class="table" cellspacing="0">
+           <tr class="mn">
+            <th>UPDATE APPOINTMENT for USER</th>
+           </tr>
+           <tr>
+            <td class="parametrs">APPOINTMENT</td>
+            <td>  
+             <select class="list" name="animals">
+             <option value="1"></option>
+             <option value="2">id 1</option>
+             <option value="3">id 2</option>
+           </select>
+            </td>
+           </tr>
+           <tr>
+             <td class="parametrs">DATE</td>
+             <td>
+               <input class="enterdate" type="datetime-local" атрибуты>
+             </td>
+           </tr>
+            <td class="parametrs">ANIMAL</td>
+            <td>
+             <select class="list" name="animals">
+               <option value="1"></option>
+               <option value="2">Dog</option>
+               <option value="3">Cat</option>
+             </select>
+            </td>
+           </tr>
+           <tr>
+            <td class="parametrs">COMPLAIN</td>
+            <td>
+             <input class="enter" name="complain" type="text" />
+            </td>
+           </tr>
+           <tr>
+             <td>&nbsp;</td>
+             <td>
+               <button>update</button>
+             </td>
+            </tr>
+          </table>
+          <table class="table" cellspacing="0">
+           <tr class="mn">
+            <th>UPDATE APPOINTMENT for ADMIN</th>
+           </tr>
+           <tr>
+            <td class="parametrs">APPOINTMENT</td>
+            <td>  
+             <select class="list" name="animals">
+             <option value="1"></option>
+             <option value="2">id 1</option>
+             <option value="3">id 2</option>
+           </select>
+            </td>
+           </tr>
+           <tr>
+             <td class="parametrs">DATE</td>
+             <td>
+               <input class="enterdate" type="datetime-local" атрибуты>
+             </td>
+           </tr>
+            <td class="parametrs">ANIMAL</td>
+            <td>
+             <select class="list" name="animals">
+               <option value="1"></option>
+               <option value="2">Dog</option>
+               <option value="3">Cat</option>
+             </select>
+            </td>
+           </tr>
+           <tr>
+            <td class="parametrs">COMPLAIN</td>
+            <td>
+             <input class="enter" name="complain" type="text" />
+            </td>
+           </tr>
+           <tr>
+             <td class="parametrs">BEHAVIORAL NOTE</td>
+             <td>
+              <input class="enter" name="behavioralNote" type="text" />
+             </td>
+            </tr>
+           <tr>
+             <td>&nbsp;</td>
+             <td>
+               <button>update</button>
+             </td>
+            </tr>
+          </table>
+       </div>
+       <!--find, show all-->
+       <div class="nad"> 
+        <table class="table" cellspacing="0">
           <tr class="mn">
-         <th>DELETE APPOINTMENT</th>
+         <th>APPOINTMENTS SEARCH BY PARAMETRS</th>
         </tr>
-         <td class="parametrs">APPOINTMENT</td>
+        <tr>
+         <td class="parametrs">NAME</td>
          <td>
-          <select class="list" name="Appointments">
-            <option value="1"></option>
-            <option value="2">id 1</option>
-            <option value="3">id 2</option>
-          </select>
+          <input class="enter" type="text" name="cm" autofocus>
          </td>
         </tr>
         <tr>
-          <td>&nbsp;</td>
+          <td class="parametrs">BREAD</td>
           <td>
-            <button>delete</button>
+           <input class="enter" type="text" name="cm" autofocus>
           </td>
          </tr>
+         <tr>
+          <td class="parametrs">DATA (necessarily)</td>
+          <td>
+            <input class="enterdate" type="datetime-local" name="cm" autofocus>
+          </td>
+         </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>
+            <button>search</button>
+          </td>
+         </tr>
+         <tr>
+          <td>WITH THIS PARAMETRS</td>
+          <td>&nbsp;</td>
+         </tr>
        </table>
-
-      </div >
-      <div class="nad">
-        <!--update-->
-        <table class="table" cellspacing="0">
-          <tr class="mn">
-           <th>UPDATE APPOINTMENT for USER</th>
-          </tr>
-          <tr>
-           <td class="parametrs">APPOINTMENT</td>
-           <td>  
-            <select class="list" name="animals">
-            <option value="1"></option>
-            <option value="2">id 1</option>
-            <option value="3">id 2</option>
-          </select>
-           </td>
-          </tr>
-          <tr>
-            <td class="parametrs">DATE</td>
-            <td>
-              <input class="enterdate" type="datetime-local" атрибуты>
-            </td>
-          </tr>
-           <td class="parametrs">ANIMAL</td>
-           <td>
-            <select class="list" name="animals">
-              <option value="1"></option>
-              <option value="2">Dog</option>
-              <option value="3">Cat</option>
-            </select>
-           </td>
-          </tr>
-          <tr>
-           <td class="parametrs">COMPLAIN</td>
-           <td>
-            <input class="enter" name="complain" type="text" />
-           </td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <button>enroll</button>
-            </td>
-           </tr>
-         </table>
-         <table class="table" cellspacing="0">
-          <tr class="mn">
-           <th>UPDATE APPOINTMENT for ADMIN</th>
-          </tr>
-          <tr>
-           <td class="parametrs">APPOINTMENT</td>
-           <td>  
-            <select class="list" name="animals">
-            <option value="1"></option>
-            <option value="2">id 1</option>
-            <option value="3">id 2</option>
-          </select>
-           </td>
-          </tr>
-          <tr>
-            <td class="parametrs">DATE</td>
-            <td>
-              <input class="enterdate" type="datetime-local" атрибуты>
-            </td>
-          </tr>
-           <td class="parametrs">ANIMAL</td>
-           <td>
-            <select class="list" name="animals">
-              <option value="1"></option>
-              <option value="2">Dog</option>
-              <option value="3">Cat</option>
-            </select>
-           </td>
-          </tr>
-          <tr>
-           <td class="parametrs">COMPLAIN</td>
-           <td>
-            <input class="enter" name="complain" type="text" />
-           </td>
-          </tr>
-          <tr>
-            <td class="parametrs">BEHAVIORAL NOTE</td>
-            <td>
-             <input class="enter" name="behavioralNote" type="text" />
-            </td>
-           </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <button>enroll</button>
-            </td>
-           </tr>
-         </table>
-      </div>
-    </di>
-      <!---------------------------ANIMALS------------------------------->
-      <div>
-        <table class="table" cellspacing="0">
-          <tr class="mn">
-           <th>ANIMAL</th>
-          </tr>
-          <tr>
-           <td class="parametrs">NAME</td>
-           <td>
-            <input class="enter" name="name" type="text" />
-           </td>
-          </tr>
-          <tr>
-            <td class="parametrs">BREED</td>
-            <td>
-              <input class="enterdate" name="breed" type="text">
-            </td>
-          </tr>
-           <td class="parametrs">USER</td>
-           <td>
-            <select class="list" name="users">
-              <option value="1"></option>
-              <option value="2">I</option>
-              <option value="3">Not me</option>
-            </select>
-           </td>
-          </tr>
-          <tr>
-           <td class="parametrs">AGE</td>
-           <td>
-            <input class="enter" name="age" type="number" />
-           </td>
-          </tr>
-          <tr>
-            <td class="parametrs">IMAGE</td>
-            <td>
-              <input type="file" name="image">
-            </td>
-           </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <button>enroll</button>
-            </td>
-           </tr>
-         </table>
-      </div>
-
-      
-     
-
-    </div>
+       <output type="text" name="result"></output>        
+       </div>    
+    </div> 
+    <div> ______________________ </div>     
   </header>
+  <section>
+    <!---------------------------ANIMALS------------------------------->
+<div>
+  <div class="ppp">
+    <h2>APPOINTMENTS</h2>
+  </div> 
+  <table class="table2" cellspacing="0">
+    <tr class="mn">
+     <th>ANIMAL</th>
+    </tr>
+    <tr>
+     <td class="parametrs">NAME</td>
+     <td>
+      <input class="enter" name="name" type="text" />
+     </td>
+    </tr>
+    <tr>
+      <td class="parametrs">BREED</td>
+      <td>
+        <input class="enterdate" name="breed" type="text">
+      </td>
+    </tr>
+     <td class="parametrs">USER</td>
+     <td>
+      <select class="list" name="users">
+        <option value="1"></option>
+        <option value="2">I</option>
+        <option value="3">Not me</option>
+      </select>
+     </td>
+    </tr>
+    <tr>
+     <td class="parametrs">AGE</td>
+     <td>
+      <input class="enter" name="age" type="number" />
+     </td>
+    </tr>
+    <tr>
+      <td class="parametrs">IMAGE</td>
+      <td>
+        <input type="file" name="image">
+      </td>
+     </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td>
+        <button class="blue">enroll</button>
+      </td>
+     </tr>
+   </table>
+</div>
+</div>
+  </section>
   <footer id="footer" class="footer">
     <div class="container">
 
