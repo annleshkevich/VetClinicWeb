@@ -258,163 +258,244 @@
        <output type="text" name="result"></output>        
        </div>    
     </div> 
-    <div> ______________________ </div>     
+    <div>.</div>     
   </header>
   <section>
     <!---------------------------ANIMALS------------------------------->
-<div>
-  <div class="ppp">
-    <h2>ANIMALS</h2></div>
-    <table cellspacing="0">
-      <tr>
-        <td>
-          <!--create--> 
-          <table class="table2" cellspacing="0">
-            <tr class="mn">
-              <th>CREATE ANIMAL</th>
+    <div>
+      <div class="ppp">
+        <h2>ANIMALS</h2></div>
+        <table cellspacing="0">
+          <tr>
+            <td>
+              <!--create--> 
+              <table class="table2" cellspacing="0">
+                <tr class="mn">
+                  <th>CREATE ANIMAL</th>
+                </tr>
+                <tr>
+                  <td class="parametrs">NAME</td>
+                  <td>
+                    <input class="enter" name="name" type="text" />
+                  </td>
+                </tr>
+                <tr>
+                  <td class="parametrs">BREED</td>
+                  <td>
+                    <input class="enterdate" name="breed" type="text">
+                  </td>
+                </tr>
+                <td class="parametrs">USER</td>
+                <td>
+                  <select class="list" name="users">
+                    <option value="1"></option>
+                    <option value="2">I</option>
+                    <option value="3">Not me</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="parametrs">AGE</td>
+                <td>
+                  <input class="enter" name="age" type="number" />
+                </td>
+              </tr>
+              <tr>
+                <td class="parametrs">IMAGE</td>
+                <td>
+                  <git input type="file" name="image">
+                </td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>
+                  <button class="blue">enroll</button>
+                </td>
+              </tr>
+            </table>
+            <!--delete-->
+            <table class="table2" cellspacing="0">
+              <tr class="mn">
+             <th>DELETE ANIMAL</th>
             </tr>
             <tr>
-              <td class="parametrs">NAME</td>
+             <td class="parametrs">ANIMAL</td>
+             <td>
+              <select class="list" name="animal">
+                <option value="1"></option>
+                <option value="2">id 1</option>
+                <option value="3">id 2</option>
+              </select>
+             </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
               <td>
-                <input class="enter" name="name" type="text" />
+                <button class="blue">delete</button>
               </td>
-            </tr>
-            <tr>
+             </tr>
+           </table> 
+          </td>
+          <td>
+            <!--update-->
+            <table class="table2" cellspacing="0">
+              <tr class="mn">
+               <th>UPDATE ANIMAL</th>
+              </tr>
+              <tr>
+                <td class="parametrs">ANIMAL</td>
+                <td>
+                  <select class="list" name="animals">
+                    <option value="1"></option>
+                    <option value="2">Dog</option>
+                    <option value="3">Cat</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td class="parametrs">USER</td>
+                <td> 
+                  <select class="list" name="users">
+                    <option value="1"></option>
+                    <option value="2">id 1</option>
+                    <option value="3">id 2</option>
+                  </select>
+               </td>
+              </tr>
+              <tr>
+                <td class="parametrs">NAME</td>
+                <td>
+                  <input class="enter" type="text">
+                </td>
+              </tr>
               <td class="parametrs">BREED</td>
               <td>
-                <input class="enterdate" name="breed" type="text">
+                <input class="enter" type="text">
               </td>
-            </tr>
-            <td class="parametrs">USER</td>
-            <td>
-              <select class="list" name="users">
-                <option value="1"></option>
-                <option value="2">I</option>
-                <option value="3">Not me</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td class="parametrs">AGE</td>
-            <td>
-              <input class="enter" name="age" type="number" />
-            </td>
-          </tr>
-          <tr>
-            <td class="parametrs">IMAGE</td>
-            <td>
-              <input type="file" name="image">
-            </td>
-          </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <button class="blue">enroll</button>
-            </td>
-          </tr>
-        </table>
-        <!--delete-->
-        <table class="table2" cellspacing="0">
-          <tr class="mn">
-         <th>DELETE ANIMAL</th>
+              </tr>
+              <tr>
+               <td class="parametrs">AGE</td>
+               <td>
+                <input class="enter" name="age" type="number" />
+               </td>
+              </tr>
+              <tr>
+                <td class="parametrs">IMAGE</td>
+                <td>
+                  <input type="file" name="image">
+                </td>
+               </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>
+                  <button class="blue">update</button>
+                </td>
+               </tr>
+             </table> 
+             <!--show list-->
+             <table class="table2" cellspacing="0">
+              <tr class="mn">
+                <th>SHOW ALL ANIMALS</th>
+              </tr>
+              <tr>
+                <td><button class="blue">show</button></td>
+             </tr>
+             <tr>
+              <td>
+                <output type="text" name="result"></output> </td>
+           </tr>
+           </table>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+ <!-----------------------------USERS----------------------------->
+  <div>
+    <div class="ppp">
+      <h2>USERS</h2>
+    </div>
+    <!--update-->
+      <table class="table2" cellspacing="0">
+        <tr class="mn">
+         <th>UPDATE USER</th>
         </tr>
         <tr>
-         <td class="parametrs">ANIMAL</td>
+          <td class="parametrs">USER</td>
+          <td>
+            <select class="list" name="animals">
+              <option value="1"></option>
+              <option value="2">id 1</option>
+              <option value="3">id 2</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td class="parametrs">EMAIL</td>
+          <td>
+            <input class="enter" type="text">
+          </td>
+        </tr>
+        <td class="parametrs">LOGIN</td>
+        <td>
+          <input class="enter" type="text">
+        </td>
+        </tr>
+        <tr>
+         <td class="parametrs">PASSWORD</td>
          <td>
-          <select class="list" name="animal">
-            <option value="1"></option>
-            <option value="2">id 1</option>
-            <option value="3">id 2</option>
-          </select>
+          <input class="enter" name="age" type="text" />
          </td>
         </tr>
         <tr>
           <td>&nbsp;</td>
           <td>
-            <button class="blue">delete</button>
+            <button class="blue">update</button>
           </td>
          </tr>
        </table> 
-      </td>
-      <td>
-        <!--update-->
-        <table class="table2" cellspacing="0">
-          <tr class="mn">
-           <th>UPDATE ANIMAL</th>
-          </tr>
-          <tr>
-            <td class="parametrs">ANIMAL</td>
-            <td>
-              <select class="list" name="animals">
-                <option value="1"></option>
-                <option value="2">Dog</option>
-                <option value="3">Cat</option>
-              </select>
-            </td>
-          </tr>
-          <tr>
-            <td class="parametrs">USER</td>
-            <td> 
-              <select class="list" name="users">
-                <option value="1"></option>
-                <option value="2">id 1</option>
-                <option value="3">id 2</option>
-              </select>
-           </td>
-          </tr>
-          <tr>
-            <td class="parametrs">NAME</td>
-            <td>
-              <input class="enter" type="text">
-            </td>
-          </tr>
-          <td class="parametrs">BREED</td>
-          <td>
-            <input class="enter" type="text">
-          </td>
-          </tr>
-          <tr>
-           <td class="parametrs">AGE</td>
-           <td>
-            <input class="enter" name="age" type="number" />
-           </td>
-          </tr>
-          <tr>
-            <td class="parametrs">IMAGE</td>
-            <td>
-              <input type="file" name="image">
-            </td>
-           </tr>
-          <tr>
-            <td>&nbsp;</td>
-            <td>
-              <button class="blue">update</button>
-            </td>
-           </tr>
-         </table> 
-         <!--show list-->
-         <table class="table2" cellspacing="0">
-          <tr class="mn">
-            <th>SHOW ALL ANIMALS</th>
-          </tr>
-          <tr>
-            <td><button class="blue">show</button></td>
-         </tr>
-         <tr>
-          <td>
-            <output type="text" name="result"></output> </td>
+       <!--delete-->
+       <table class="table2" cellspacing="0">
+        <tr class="mn">
+       <th>DELETE USER</th>
+      </tr>
+      <tr>
+       <td class="parametrs">USER</td>
+       <td>
+        <select class="list" name="animal">
+          <option value="1"></option>
+          <option value="2">id 1</option>
+          <option value="3">id 2</option>
+        </select>
+       </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>
+          <button class="blue">delete</button>
+        </td>
        </tr>
-       </table>
-      </td>
-    </tr>
-  </table>
-</div>
-</div>
+     </table> 
+     <!--show list-->
+     <table class="table2" cellspacing="0">
+      <tr class="mn">
+        <th>SHOW ALL USERS</th>
+      </tr>
+      <tr>
+        <td><button class="blue">show</button></td>
+     </tr>
+     <tr>
+      <td>
+        <output type="text" name="result"></output> </td>
+   </tr>
+   </table>
+  </div>
 </section>
-  <footer id="footer" class="footer">
-    <div class="container">
+<footer id="footer" class="footer">
+  <div class="container">
 
-    </div>
-  </footer>
+  </div>
+</footer>
 </body>
 </html>
+  
