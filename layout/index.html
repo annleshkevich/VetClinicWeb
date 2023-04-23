@@ -22,6 +22,7 @@
           <li><a href="#">Users</a></li>
           <li><a href="#">Animals</a></li>
         </ul>
+        <!-----------------------------USERS----------------------------->
         <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
           log in
         </button>
@@ -60,10 +61,11 @@
         </div>
       </div>      
     </div>
-      <div>
+     <!----------------------------APPOINTMENTS-------------------------->
+     <div class="nad">
         <table class="table" cellspacing="0">
           <tr class="mn">
-           <th>APPOINTMENT</th>
+           <th>CREATE APPOINTMENT</th>
           </tr>
           <tr>
            <td class="parametrs">FULL NAME</td>
@@ -99,7 +101,123 @@
             </td>
            </tr>
          </table>
+         <table class="table" cellspacing="0">
+          <tr class="mn">
+         <th>DELETE APPOINTMENT</th>
+        </tr>
+         <td class="parametrs">APPOINTMENT</td>
+         <td>
+          <select class="list" name="Appointments">
+            <option value="1"></option>
+            <option value="2">id 1</option>
+            <option value="3">id 2</option>
+          </select>
+         </td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td>
+            <button>delete</button>
+          </td>
+         </tr>
+       </table>
+
+      </div >
+      <div class="nad">
+        <!--update-->
+        <table class="table" cellspacing="0">
+          <tr class="mn">
+           <th>UPDATE APPOINTMENT for USER</th>
+          </tr>
+          <tr>
+           <td class="parametrs">APPOINTMENT</td>
+           <td>  
+            <select class="list" name="animals">
+            <option value="1"></option>
+            <option value="2">id 1</option>
+            <option value="3">id 2</option>
+          </select>
+           </td>
+          </tr>
+          <tr>
+            <td class="parametrs">DATE</td>
+            <td>
+              <input class="enterdate" type="datetime-local" атрибуты>
+            </td>
+          </tr>
+           <td class="parametrs">ANIMAL</td>
+           <td>
+            <select class="list" name="animals">
+              <option value="1"></option>
+              <option value="2">Dog</option>
+              <option value="3">Cat</option>
+            </select>
+           </td>
+          </tr>
+          <tr>
+           <td class="parametrs">COMPLAIN</td>
+           <td>
+            <input class="enter" name="complain" type="text" />
+           </td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>
+              <button>enroll</button>
+            </td>
+           </tr>
+         </table>
+         <table class="table" cellspacing="0">
+          <tr class="mn">
+           <th>UPDATE APPOINTMENT for ADMIN</th>
+          </tr>
+          <tr>
+           <td class="parametrs">APPOINTMENT</td>
+           <td>  
+            <select class="list" name="animals">
+            <option value="1"></option>
+            <option value="2">id 1</option>
+            <option value="3">id 2</option>
+          </select>
+           </td>
+          </tr>
+          <tr>
+            <td class="parametrs">DATE</td>
+            <td>
+              <input class="enterdate" type="datetime-local" атрибуты>
+            </td>
+          </tr>
+           <td class="parametrs">ANIMAL</td>
+           <td>
+            <select class="list" name="animals">
+              <option value="1"></option>
+              <option value="2">Dog</option>
+              <option value="3">Cat</option>
+            </select>
+           </td>
+          </tr>
+          <tr>
+           <td class="parametrs">COMPLAIN</td>
+           <td>
+            <input class="enter" name="complain" type="text" />
+           </td>
+          </tr>
+          <tr>
+            <td class="parametrs">BEHAVIORAL NOTE</td>
+            <td>
+             <input class="enter" name="behavioralNote" type="text" />
+            </td>
+           </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td>
+              <button>enroll</button>
+            </td>
+           </tr>
+         </table>
       </div>
+    </di>
+      <!---------------------------ANIMALS------------------------------->
       <div>
         <table class="table" cellspacing="0">
           <tr class="mn">
