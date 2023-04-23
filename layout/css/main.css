@@ -102,14 +102,14 @@ button {
 .table {
   margin-left: 100px;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 30px;
   background: rgba(207, 56, 89, 0.199);  
   border-radius: 8px;
 }
 .table2 {
   margin-left: 100px;
   padding: 0;
-  margin-top: 10px;
+  margin-top: 30px;
   background: rgba(129, 182, 219, 0.404);  
   border-radius: 8px;
 }
@@ -192,4 +192,7 @@ input[type=number] {
   border-radius: 8px;
   width: 80px;
   background: rgba(78, 122, 216, 0.61);
+}
+.fin {
+  margin-top: 210px;
 }
