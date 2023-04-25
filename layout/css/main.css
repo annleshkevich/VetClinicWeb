@@ -1,0 +1,198 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Heebo", sans-serif;
+  color: #fff;
+  font-size: 20px;
+}
+.topic {
+  text-transform: uppercase;
+  padding: 0;
+  font-weight: 200;
+  font-size: 40px;
+  color: #fff;
+}
+.container {
+  width: 1170px;
+  margin: 0 auto; /*позиционирование по центру*/
+}
+header {
+  background: url('../img/animals.jpg') no-repeat center top / cover;
+}
+section
+{
+  margin-top: -25px;
+  background: url("../img/dogs.jpg");
+}
+.header a {
+  color: #fff;
+}
+ul, li {
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+.menu {
+  display: flex;
+  margin-left: 160px;
+}
+.menu li a { 
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+}
+.menu li {
+  margin-right: 40px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+  font-size: 20px;
+}
+button {
+  background-color: #CB5C72; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 8px;
+  width: 80px;
+  background: rgba(163, 26, 56, 0.411);
+}
+.mn th {
+  letter-spacing: 0.1em;  
+  margin: 0;
+  font-size: 14px;
+}
+.enter {
+  border-radius: 8px;
+  opacity: .7;
+  outline: none;
+  width: 100px;
+  border: none; 
+  height: 0px;
+}
+.pp h2 {
+  font-size: 26px;
+  margin-left: 590px;
+  margin-top: -20px;
+}
+.ppp  h2{
+  font-size: 26px;
+  color: #ffffff;
+  margin-left: 620px;
+  padding-top: 70px;
+}
+.enterdate {
+  height: 25px;  
+  opacity: .7;
+  width: 250px;
+  border: none; 
+  border-radius: 8px;
+  opacity: .7;
+  outline: none;
+}
+.parametrs {
+  font-size: 14px;
+}
+.table {
+  margin-left: 100px;
+  padding: 0;
+  margin-top: 30px;
+  background: rgba(207, 56, 89, 0.199);  
+  border-radius: 8px;
+}
+.table2 {
+  margin-left: 100px;
+  padding: 0;
+  margin-top: 30px;
+  background: rgba(129, 182, 219, 0.404);  
+  border-radius: 8px;
+}
+.list {
+  border-radius: 8px;
+  opacity: .7;
+  outline: none;
+  width: 250px;  
+  border: none; 
+  height: 25px;
+}
+/* Full-width input fields */
+input[type=text], input[type=password], 
+input[type=number] {
+  width: 100%;
+  padding: 12px 10px;
+  margin: 2px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+.container2 {
+  padding: 20px;
+}
+.container3 {
+  padding: 20px;
+  height: 250px;
+}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(197, 59, 94); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto 15% auto; /* 10% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 30%; /* Could be more or less, depending on screen size */
+}
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #CB5C72;
+  font-size: 35px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: rgb(170, 155, 168);
+  cursor: pointer;
+}
+.nad {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+}
+.blue {
+  background-color: #aeebeb2c; 
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  border-radius: 8px;
+  width: 80px;
+  background: rgba(78, 122, 216, 0.61);
+}
+.fin {
+  margin-top: 210px;
+}
